@@ -1,0 +1,32 @@
+﻿<Window x:Class="_2DimencialArray.SecondWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_2DimencialArray"
+        mc:Ignorable="d"
+        Title="SecondWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="4*"></RowDefinition>
+            <RowDefinition></RowDefinition>
+
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition Width="3*"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition Width="3*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <UniformGrid x:Name="UIGrid" Rows="0" Columns="0">
+        </UniformGrid>
+        <UniformGrid x:Name="UIGrid2" Rows="0" Columns="0" Grid.Row="0" Grid.Column="2">
+        </UniformGrid>
+        <UniformGrid x:Name="UIGrid3" Rows="0" Columns="0" Grid.Row="0" Grid.Column="4">
+        </UniformGrid>
+        <Button x:Name="btnMultiply" Grid.Row="1" Grid.Column=" 0" Content="Multiply" Click="btnMultiply_Click"></Button>
+        <Button x:Name="btnNextTask" Grid.Row="1" Grid.Column="3" Content="Next Task" Grid.ColumnSpan="2" Click="btnNextTask_Click"></Button>
+    </Grid>
+</Window>
